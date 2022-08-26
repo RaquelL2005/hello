@@ -41,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:endIconMode="clear_text"
+            app:counterMaxLength="100"
             app:startIconContentDescription="Insirir seu email"
             app:startIconDrawable="@drawable/ic_baseline_email">
 
@@ -58,6 +59,7 @@
             android:layout_height="wrap_content"
             app:endIconMode="password_toggle"
             app:startIconContentDescription="Insirir sua senha"
+            app:counterMaxLength="100"
             app:startIconDrawable="@drawable/ic_baseline_lock">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -68,6 +70,12 @@
 
 
         </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            app:icon="@drawable/ic_baseline_lock"
+            style="button"/>
     </LinearLayout>
 
 </LinearLayout>
